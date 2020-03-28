@@ -23,7 +23,7 @@ export const options = [
     {
         title: 'Ouvir podcasts',
         description:
-      'Caso não queira ficar preso à televisão, uma alternativa é ouvir podcasts. Os programas estão fazendo sucesso e atualmente existe uma grande diversidade de assuntos, como política, educação, esportes, tecnologia, ciência, celebridades, humor, entre muitos outros. Os podcasts possuem duração variada, e podem ser escutados em diferentes momentos do dia, em agregadores para computador ou com a liberdade de ouvir pelo celular, em apps para Android e iPhone (iOS), como Spotify, Deezer, Apple Podcasts e Google Podcasts.',
+      'Os podcasts estão fazendo muito sucesso e atualmente existe uma grande diversidade de assuntos, como política, educação, esportes, tecnologia, ciência, celebridades, humor, entre muitos outros. Os podcasts possuem duração variada, e podem ser escutados em diferentes momentos do dia, com a liberdade de ouvir pelo celular, em apps para Android e iPhone (iOS), como Spotify, Deezer, Apple Podcasts e Google Podcasts.',
         icon: 'music',
     },
     {
@@ -42,13 +42,13 @@ export const options = [
     {
         title: 'Começe um novo idioma',
         description:
-      'O Duolingo é um site e aplicativo para celular que oferece pequenas aulas de idiomas estrangeiros de graça e que pode ser útil para passar aprender uma nova língua enquanto se preenche o tempo. Nele, é possível aprender inglês, espanhol, francês, alemão, italiano, entre outras opções, através de lições diárias de aprendizado de vocabulário e gramática que utilizam textos, imagens e sons. O serviço funciona em formato de game, em que o usuário deve avançar de etapas, conquistando objetivos e aprendendo ao mesmo tempo.',
+      'O Duolingo é um site e aplicativo para celular que oferece pequenas aulas de idiomas estrangeiros de graça e que pode ser útil para passar aprender uma nova língua enquanto se preenche o tempo. Nele, é possível aprender inglês, espanhol, francês, alemão, italiano, entre outras opções, através de lições diárias de aprendizado de vocabulário e gramática que utilizam textos, imagens e sons.',
         icon: 'language',
     },
     {
         title: 'Arrume o guarda–roupa',
         description:
-      'Fala a verdade, você nunca tem tempo de arrumar o guarda-roupa. Existem peças em desuso, outras descosturadas, e ainda aquelas que você guarda para quando emagrecer ou engordar. Limpa tudo, tem muita gente aguardando essa doação de roupas. Ou, se preferir, pode montar novos looks com o que você tem guardado.',
+      'Fala a verdade, você nunca tem tempo de arrumar o guarda-roupa. Existem peças em desuso, outras descosturadas, e ainda aquelas que você guarda para quando emagrecer ou engordar. Limpa tudo, tem muita gente aguardando essa doação de roupas. ',
         icon: 'home',
     },
     {
@@ -63,4 +63,15 @@ export const options = [
       'Não espere as quintas-feiras para postar novas fotos. Com certeza você tem aquela foto linda para postar e acaba esquecendo. Foto de cachorro, comida, selfie está valendo tudo para entreter os colegas nas redes sociais. Aproveita e faz uma limpeza na galeria do celular e do computador. Mas vale foto antiga também viu. Relembrar é viver, as fotos marcam momentos da história de cada pessoa.',
         icon: 'photos',
     },
+    {
+        title: 'Faça uma geral no seu celular',
+        description: 'Aproveite o momento para dar aquela organizada no seu smartphone, limpe o arquivo de fotos/vídeos e os aplicativos que você não usa mais pra melhorar o desempenho do smartphone.',
+        icon: 'smartphone',
+    },
+    {
+        title: 'Faça exercicios em casa',
+        description: 'O exercício físico tem impacto positivo não só na saúde mental, mas também no sistema imunológico. Alguns aplicativos podem ajudar a se manter ativo nesse período como o Freeletics, Seven e BTFit.',
+        icon: 'heartbeat',
+    },
+
 ];

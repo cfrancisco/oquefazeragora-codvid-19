@@ -28,6 +28,7 @@ const styles = () => ({
   },
     button:
   {
+      userSelect: 'none',
       width: '250px',
       marginLeft: 'auto',
       marginRight: 'auto',
@@ -53,12 +54,13 @@ const styles = () => ({
     grid:
   {
       boxSizing: 'border-box',
+      borderRadius: '78px 2px',
       marginLeft: 'auto',
       marginRight: 'auto',
       width: '80%',
       minHeight: '260px',
       background: 'white',
-      borderLeft: '2px solid #A931D3',
+      borderLeft: '5px solid #A931D3',
       marginBottom: '90px',
   },
     title2:
@@ -89,8 +91,8 @@ const styles = () => ({
       height: '100px',
       color: '#df60bc',
       position: 'absolute',
-      top: '203px',
-      right: '8%',
+      top: '430px',
+      left: '9%',
   },
 
     bottomBar:

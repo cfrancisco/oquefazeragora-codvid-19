@@ -11,6 +11,8 @@ import {
     faEnvelope,
     faHeart,
     faIgloo,
+    faMobile,
+    faHeartbeat,
     faSmileWink,
 } from '@fortawesome/free-solid-svg-icons';
 import styles from './_styles';
@@ -23,7 +25,11 @@ const iconsTr = {
     language: faMap,
     home: faIgloo,
     myself: faSmileWink,
+    smartphone: faMobile,
+    heartbeat: faHeartbeat,
 };
+
+let internalOptions = JSON.parse(JSON.stringify(options));
 
 const useStyles = makeStyles(styles);
 
@@ -32,18 +38,24 @@ const Main = () => {
 
     const [data, setData] = useState();
 
-    useEffect(() => {
-        setData(options[0]);
-    }, []);
-
-    const min = Math.ceil(0);
-    const max = Math.floor(5);
-
     const randomize = () => {
-        const index = Math.floor(Math.random() * (max - min + 1)) + min;
-        console.log('new index', index);
-        setData(options[index]);
+        if (internalOptions.length <= 1) {
+            internalOptions = JSON.parse(JSON.stringify(options));
+        }
+
+        const min = Math.ceil(0);
+        const max = Math.floor(internalOptions.length) - 1;
+
+        const index = Math.floor(Math.random() * (max - min + 1));
+        const aux = internalOptions[index];
+        internalOptions.splice(index, 1);
+        console.log('internalOptions', internalOptions);
+        setData(aux);
     };
+
+    useEffect(() => {
+        randomize();
+    }, []);
 
     /*
   FirebaseService.getDataList('participants', (list) => {
@@ -62,7 +74,7 @@ const Main = () => {
                     </div>
                 </Grid>
                 <Grid item xs={12} md={9}>
-                    <div className={classes.title}>O QUE FAZER ONLINE AGORA?</div>
+                    <div className={classes.title}>O QUE FAZER AGORA?</div>
                     <div onClick={randomize} className={classes.button}>
                         ME DÊ UMA NOVA SUGESTÃO
                     </div>
